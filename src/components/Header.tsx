@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { ReactNode, useState } from "react";
 import { FiMenu, FiShoppingCart, FiX } from "react-icons/fi";
+import CartSideBar from "./CartSideBar";
 
 interface NavItem {
   label: string;
@@ -102,6 +103,16 @@ const Header = ({
           </div>
         )}
       </header>
+      
+      {
+        showCart && (
+          <div>
+           <CartSideBar isOpen={cartOpen} onClose={() => setCartOpen(false)}/> 
+          </div>
+        )
+      }
+
+
     </div>
   );
 };
