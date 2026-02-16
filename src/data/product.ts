@@ -1,4 +1,5 @@
-import { Category, Product } from '@/types/product';
+import { Category, Product } from "@/types/product";
+
 
 export const products: Product[] = [
   {
@@ -150,6 +151,7 @@ export const categories: Category[] = [
   { name: 'All', slug: 'all' },
   { name: 'Shirts', slug: 'shirts' },
   { name: 'Stickers', slug: 'stickers' },
+  { name: 'Accessories', slug: 'accessories' },
 ];
 
 // export function getProductBySlug(slug: string): Product | undefined {
