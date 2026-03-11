@@ -111,8 +111,6 @@ const Header = ({
           </div>
         )
       }
-
-
     </div>
   );
 };
